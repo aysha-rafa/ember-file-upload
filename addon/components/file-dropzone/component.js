@@ -185,9 +185,9 @@ export default Component.extend({
     this[DATA_TRANSFER] = dataTransfer;
 
     if (this.isAllowed()) {
-      evt.dataTransfer.dropEffect = get(this, 'cursor');
+/*      evt.dataTransfer.dropEffect = get(this, 'cursor');
       set(this, 'active', true);
-      set(this, 'valid', get(dataTransfer, 'valid'));
+      set(this, 'valid', get(dataTransfer, 'valid'));*/
 
       if (this.ondragenter) {
         this.ondragenter(dataTransfer);
